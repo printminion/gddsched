@@ -3,17 +3,15 @@
 
 = Introduction =
 
-*Check out the trunk and import the project in eclipse. Try to launch it in emulator or on your android phone.
-*Find Setup.java and investigate it.
-*Goto url ... and clone it.
-*Share the document as rss
-*Change url in Setup.java
-*Open in chrome and save three files
+ * Check out the trunk and import the project in eclipse. Try to launch it in emulator or on your android phone.
+ * Find Setup.java and investigate it.
+ * Goto url ... and clone it.
+ * Share the document as rss
+ * Change url in Setup.java
+ * Open in chrome and save three files
 
 Now you have your own instance of app. It reads your Spreadsheets and syncs it with app.
 
 Now by changing the content of your Spreadsheets and pushing reload in your app you will get fresh data und see changes.
-
-
 
 
