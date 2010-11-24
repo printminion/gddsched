@@ -11,6 +11,10 @@ public class Setup {
 	/**
 	 * Clone then google docs document from here
 	 * @link https://spreadsheets.google.com/ccc?key=0Akgh73WhU1qHdHJmSUlSb0JIckowX1ZiQkhsYmdkdkE&hl=en&authkey=CIaKgpcD
+	 *
+	 * or from templates gallery
+	 * 
+	 * @link https://docs.google.com/templates?q=gddsched&sort=hottest&view=author
 	 */
 
 	public static final String WORKSHEETS_URL = "http://spreadsheets.google.com/feeds/worksheets/0Akgh73WhU1qHdHJmSUlSb0JIckowX1ZiQkhsYmdkdkE/public/basic";
