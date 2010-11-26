@@ -32,8 +32,8 @@ Now you have your own instance of app. It reads your Spreadsheet and syncs it wi
 = Static Files To Change =
 You will found them in [http://code.google.com/p/gddsched/source/browse/trunk/#trunk/res/xml res/xml/]
 
- * blocks.xml - Define time of none dynamic stuff lunch/pause/keynote
- * rooms.xml - Define your rooms
+ * blocks.xml - define time of none dynamic stuff lunch/pause/keynote
+ * rooms.xml - define your rooms
  * tracks.xml - define your tracks
 
 = Hints =
