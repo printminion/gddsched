@@ -2,27 +2,27 @@
 #labels howto
 
 = Introduction =
- This app is a clone of iosched app. Stripped down to one day event, uncommented stuff we can not provide like wave, map etc. Moved all hardcoded stuff into Setup.java class. Added some fancy GDD Graphics (you will find it in [http://code.google.com/p/gddsched/source/browse/#svn/trunk/assets/mdpi/_pre_production _pre_production] folder)
+ This app is a clone of [http://code.google.com/p/iosched/ iosched] app. It is stripped down to one day event, uncommented stuff we can not provide like wave, map etc and moved all hardcoded stuff into Setup.java class. Added some fancy GDD Graphics (you will find it in [http://code.google.com/p/gddsched/source/browse/#svn/trunk/assets/mdpi/_pre_production _pre_production] folder)
 
 
 = Step by Step=
  * Check out the trunk and import the project in eclipse. Try to launch it in emulator or on your android phone.
- * Find Setup.java and investigate it. You will find all infos about event you can edit.
+ * Find [http://code.google.com/p/gddsched/source/browse/trunk/src/com/kupriyanov/android/apps/gddsched/de/Setup.java Setup.java] and investigate it. You will find all infos about event you can edit.
  * You will see something like
 
  public static final String WORKSHEETS_URL = "http://spreadsheets.google.com/feeds/worksheets/0Akgh73WhU1qHdHJmSUlSb0JIckowX1ZiQkhsYmdkdkE/public/basic";
 It is url of atom feed of the Spreadsheets with sessions data hosted on Google Docs.   
  * Go to url https://spreadsheets.google.com/ccc?key=0Akgh73WhU1qHdHJmSUlSb0JIckowX1ZiQkhsYmdkdkE&hl=en&authkey=CIaKgpcD 
 or 
-https://docs.google.com/templates?q=gddsched&sort=hottest&view=author
+[https://docs.google.com/templates?q=gddsched&sort=hottest&view=author Google Templates]
 and clone this document for you
 
  * Share the document as rss Feed - you will get new ID for your document.
  * Change this id in Setup.java in WORKSHEETS_URL variable.
- * Open previous RSS-Feed in chrome and save each Spreadsheet (sessions, speakers, vendors) three files. You will these files in assets folder
-cache-sessions.xml
-cache-speakers.xml
-cache-vendors.xml
+ * Open previous RSS-Feed in chrome and save each Spreadsheet (sessions, speakers, vendors) three files. You will these files in [http://code.google.com/p/gddsched/source/browse/trunk/#trunk/assets assets] folder
+  * cache-sessions.xml
+  * cache-speakers.xml
+  * cache-vendors.xml
 
 Now you have your own instance of app. It reads your Spreadsheet and syncs it with app.
 
@@ -30,7 +30,7 @@ Now by changing the content of your Spreadsheets and pushing reload in your app 
 
 
 = Static Files To Change =
-You will found them in res/xml/
+You will found them in [http://code.google.com/p/gddsched/source/browse/trunk/#trunk/res/xml res/xml/]
 
  * blocks.xml - Define time of none dynamic stuff lunch/pause/keynote
  * rooms.xml - Define your rooms
@@ -38,10 +38,10 @@ You will found them in res/xml/
 
 = Hints =
  * Warning: Check out hints in Spreadsheets and colored columns.
- * Enable Log and validate initial import in your database via logcat.
+ * [http://code.google.com/p/gddsched/source/browse/trunk/src/com/google/android/apps/iosched/provider/ScheduleProvider.java#68 Enable Log] and validate initial import in your database via logcat.
  * On Errors in initial database import validate your database with some tools like [https://github.com/simudvarac/Android-DB-Editor Android-DB-Editor]
  * Some content of iosched is still there like [http://code.google.com/p/gddsched/source/browse/#svn/trunk/map map].
- * You may want to rename the package name to be able to publish on the Android Market. You can do in eclipse. Do not forget to change it in the Manifest.xml and in Setup.java 
+ * You may want to rename the package name to be able to publish on the Android Market. You can do in eclipse. Do not forget to change it in the Manifest.xml and in [http://code.google.com/p/gddsched/source/browse/trunk/src/com/kupriyanov/android/apps/gddsched/de/Setup.java Setup.java] 
 
 = Nice to have =
  * Possibility to change room names without making new apk
