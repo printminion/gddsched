@@ -26,7 +26,7 @@ and clone this document for you
 
 Now you have your own instance of app. It reads your Spreadsheet and syncs it with app.
 
-Now by changing the content of your Spreadsheets and pushing reload in your app you will get fresh data und see changes.
+ * By changing the content of your Spreadsheets and pushing reload in your app you will get fresh data und see changes.
 
 
 = Static Files To Change =
@@ -39,15 +39,15 @@ You will found them in [http://code.google.com/p/gddsched/source/browse/trunk/#t
 = Hints =
  * Warning: Check out hints in Spreadsheets and colored columns.
  * [http://code.google.com/p/gddsched/source/browse/trunk/src/com/google/android/apps/iosched/provider/ScheduleProvider.java#68 Enable Log] and validate initial import in your database via logcat.
- * On Errors in initial database import validate your database with some tools like [https://github.com/simudvarac/Android-DB-Editor Android-DB-Editor]
+ * On Errors in initial database import - validate your database with some tools like [https://github.com/simudvarac/Android-DB-Editor Android-DB-Editor]
  * Some content of iosched is still there like [http://code.google.com/p/gddsched/source/browse/#svn/trunk/map map].
- * You may want to rename the package name to be able to publish on the Android Market. You can do in eclipse. Do not forget to change it in the Manifest.xml and in [http://code.google.com/p/gddsched/source/browse/trunk/src/com/kupriyanov/android/apps/gddsched/de/Setup.java Setup.java] 
+ * You may want to rename the package name to be able to publish on the Android Market. You can do in eclipse. Do not forget to change it in the [http://code.google.com/p/gddsched/source/browse/trunk/AndroidManifest.xml Manifest.xml] and in [http://code.google.com/p/gddsched/source/browse/trunk/src/com/kupriyanov/android/apps/gddsched/de/Setup.java Setup.java] 
 
 = Nice to have =
  * Possibility to change room names without making new apk
  
 = Relevant projects =
- * iosched
- * devoxx
- * droidcamp london
+ * [http://code.google.com/p/iosched/ iosched]
+ * [http://code.google.com/p/devoxx-schedule-android/ devoxx-schedule-android] 
+ * [http://www.appbrain.com/app/droidcon-london-app-2010/novoda.droidconuk2010 Droidcon London App 2010]
  * ...
